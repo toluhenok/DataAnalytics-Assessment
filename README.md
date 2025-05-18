@@ -53,7 +53,7 @@ LEFT JOIN was used to ensure customers with zero transactions are still included
 - There were issue authentication & permissions issues during setup where I encountered access denied errors for custom users and databases.
 **Solution**:
 - Granted user permissions explicitly using:
-  ```GRANT ALL PRIVILEGES ON db_name.* TO 'username'@'localhost'; FLUSH PRIVILEGES;
+  _GRANT ALL PRIVILEGES ON db_name.* TO 'username'@'localhost'; FLUSH PRIVILEGES;_
 **Chanllenges**:
 - Some queries failed due to unsupported syntax (e.g., CTEs) in older MySQL versions.
 **Solution**:
