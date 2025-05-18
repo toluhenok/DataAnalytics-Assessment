@@ -48,3 +48,14 @@ This assessment contains a series of SQL queries used to analyze customer behavi
     (Assuming avg_profit_per_transaction = 0.1% of transaction value)
 
 LEFT JOIN was used to ensure customers with zero transactions are still included, and handled cases where tenure is zero to avoid division by zero. Results are sorted in descending order of estimated CLV to identify high-value customers.
+
+**Chanllenges**:
+- There were issue authentication & permissions issues during setup where I encountered access denied errors for custom users and databases.
+**Solution**:
+- Granted user permissions explicitly using:
+  ```GRANT ALL PRIVILEGES ON db_name.* TO 'username'@'localhost';
+      FLUSH PRIVILEGES;
+**Chanllenges**:
+- Some queries failed due to unsupported syntax (e.g., CTEs) in older MySQL versions.
+**Solution**:
+- I rewrote queries using subqueries and traditional joins for compatibility.
