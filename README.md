@@ -1,4 +1,3 @@
-# DataAnalytics-Assessment
 # Data Analyst Assessment (CowryWise)
 
 This assessment contains a series of SQL queries used to analyze customer behavior and financial activity from the adashi_staging dataset consisting of `users_customuser`, `savings_savingsaccount`, `plans_plan` and `withdrawals_withdrawal` tables.
